@@ -1,0 +1,82 @@
+@import "../../base";
+
+
+
+.video{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+
+
+    &__top{
+        margin-bottom: 0.5rem;
+        position: relative;
+ 
+
+     img{
+        width: 100%;
+        border-radius: 8px;
+     }
+     span{
+        position: absolute;
+        bottom: 0.3rem;
+        right: 0.3rem;
+        padding: 0.2rem;
+        background: #080808ec;
+        border-radius: 3px;
+     }
+
+    } 
+    &__first{
+        display: flex;
+        justify-content: center;
+     
+    }
+    &__second{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        color: #fff;
+        width:full ;
+        text-align: left;
+       @include line-clamp(1)
+
+    }
+    .span{
+        padding: 2px;
+    }
+
+    &__description{
+        display: flex;
+        flex-direction: column;
+        font-size: 11px;
+        text-align: left;
+
+    }
+
+    &__details{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        font-size: 11px;
+        text-align: left;
+    }
+    &__channel{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        width: 30px;
+        height: 30px;
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+    p{
+        margin-bottom: 0;
+    }
+
+}
+
